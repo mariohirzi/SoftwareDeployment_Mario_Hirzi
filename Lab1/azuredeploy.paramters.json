@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "storagePrefix": {
+        "value": "lab"
+      },
+      "storageSKU": {
+        "value": "Standard_LRS"
+      },
+      "subscriptionId": {
+        "value": "de627c55-dd5f-4542-ac96-00c41e5786e0"
+      },
+      "name": {
+        "value": "web-app-name-01"
+      },
+      "location": {
+        "value": "Central US"
+      },
+      "hostingPlanName": {
+        "value": "App-planTest01-916e"
+      },
+      "serverFarmResourceGroup": {
+        "value": "myResourceGroup"
+      },
+      "alwaysOn": {
+        "value": false
+      },
+      "linuxFxVersion": {
+        "value": "NODE|12-lts"
+      }
+    }
+  }

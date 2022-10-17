@@ -4,10 +4,10 @@
 3. Zuletzt gab es noch ein paar kleine Probleme bei den Parametern
 
 
-$templateFile=path von der templatefile
-$parameterFile=path von der parameterfile
-
 Powershell 7 Abfrage:
+
+$templateFile= "path von der templatefile"
+$parameterFile= "path von der parameterfile"
 
 New-AzResourceGroupDeployment `
   -Name myResourceGrouptest `

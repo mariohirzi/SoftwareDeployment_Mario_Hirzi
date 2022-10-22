@@ -6,14 +6,12 @@ const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 
 
-describe('/first test', () => {
+describe('/first test', function() {
 
-    it('test default API hello world', (done) => {
-        chai.request('http://localhost:3000' )
-        .get('/')
-        .end((err,res) => {
-            res.should.have.status(200);
-            done();
-        })
+    it('test default API hello world', function() {
+        let value1 = 10;
+        let value2 = 5;
+
+        expect(value1).to.not.equal(value2);
   });
 });

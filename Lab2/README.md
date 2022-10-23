@@ -28,6 +28,9 @@ Release
 
 ## Probleme
 1. Weder mit Ubuntu noch mit Windows Server funktioniert die Webapp. Deployen funktioniert zwar, aber ruft man die Seite http://web-app-name-01.azurewebsites.net/ auf
-bekommt man einen Application Error
+bekommt man einen Application Error.
+    Mit dem Diagnose and solve problems tool findet man diesen Fehler:
+    npm ERR! enoent ENOENT: no such file or directory, open '/home/site/wwwroot/package.json'
+
 2. Links zu den Azure Web-Apps (dev & production) sollen dafür zwei Releases erstellt werden oder ist der Pipline deploy dev und der Release production? Wenn
 das so ist wie laufen die auf einem untschiedlichen Link, bekomm immer einen Fehler, wenn die Namen bei der Pipline und dem Release nicht übereinstimmen.

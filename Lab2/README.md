@@ -13,3 +13,21 @@ Build and Deploy status
 
 Release
 ![Release](./pictures/Release.png "Release")
+
+
+## Release Ablauf:
+1. Es wird eine neue Release-Pipeline erstellt
+2. Danach wird das template ausgewählt (Delpoy a Node.js to Azure App Service)
+3. In den Pre-deployment conditions wird auf Manual Only gestellt
+4. Ein artifact wird hinzugefügt (die zuvor erstellte Pipline)
+5. Azure subscription wird hinzugefügt
+6. Der name des app services
+7. Speichern und Create a release
+8. Deploy
+
+
+## Probleme
+1. Weder mit Ubuntu noch mit Windows Server funktioniert die Webapp. Deployen funktioniert zwar, aber ruft man die Seite http://web-app-name-01.azurewebsites.net/ auf
+bekommt man einen Application Error
+2. Links zu den Azure Web-Apps (dev & production) sollen dafür zwei Releases erstellt werden oder ist der Pipline deploy dev und der Release production? Wenn
+das so ist wie laufen die auf einem untschiedlichen Link, bekomm immer einen Fehler, wenn die Namen bei der Pipline und dem Release nicht übereinstimmen.

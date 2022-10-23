@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start-dev": "node app.js",
-    "test": "mocha --exit",
+    "test": "mocha test/test.js",
     "build": "echo 'build script executed.'"
   },
   "author": "Mario Hirzi",

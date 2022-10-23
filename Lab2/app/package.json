@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start-dev": "node app.js",
-    "test": "mocha --exit"
+    "test": "mocha --exit",
+    "build": "echo 'build script executed.'"
   },
   "author": "Mario Hirzi",
   "license": "ISC",

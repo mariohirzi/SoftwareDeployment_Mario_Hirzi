@@ -39,6 +39,7 @@ stages:
         cd ./Lab2/app
         npm install
         npm run build
+        npx test
       displayName: 'npm install, build and test'
 
     - task: ArchiveFiles@2

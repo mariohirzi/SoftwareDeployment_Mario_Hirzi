@@ -37,6 +37,7 @@ stages:
 
     - script: |
         cd ./Lab2/app
+        npm init
         npm install
         npm run build
         npm run test

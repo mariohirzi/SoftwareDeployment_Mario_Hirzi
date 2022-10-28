@@ -7,9 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "start-dev": "node app.js",
+    "start-dev": "node ./app.js",
     "test": "mocha test/test.js --exit",
-    "build": "echo 'build script executed.'"
+    "build": "npm install"
   },
   "author": "Mario Hirzi",
   "license": "ISC",

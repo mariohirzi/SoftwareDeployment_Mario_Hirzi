@@ -37,10 +37,9 @@ stages:
 
     - script: |
         cd ./Lab2/app
-        npm init
-        npm install
         npm run build
         npm run test
+        npm run start-dev
       displayName: 'npm install, build and test'
 
     - task: ArchiveFiles@2

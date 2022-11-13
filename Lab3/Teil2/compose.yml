@@ -1,0 +1,38 @@
+version: '2'
+
+services:
+  mysql:
+    build: ./mysql
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment: 
+      MYSQL_ROOT_PASSWORD: save123
+      MYSQL_DB: Database1
+      MYSQL_USER: SuperUser
+      MYSQL_PASS: save123
+    ports:
+      - 3306:3306
+    networks:
+      - web
+
+  wordpress:
+    depends_on:
+        - mysql
+    build: ./wordpress
+    ports:
+      - 8000:80
+    volumes: 
+      - wordpress:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: SuperUser
+      WORDPRESS_DB_PASS: save123
+      WORDPRESS_DB: Database1
+    networks:
+      - web
+
+volumes:
+  mysql-data:
+  wordpress:
+networks:
+  web:

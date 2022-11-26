@@ -31,9 +31,11 @@ Dies wurde nach [diesem Tutorial](https://learn.microsoft.com/en-us/azure/aks/tu
 Danach sollten die Services erstellt werden:
 ![deploy](./pictures/deploy.png "deploy")
 
-Mit dem Befehl ```
+Mit dem Befehl 
+```
 kubectl get service wordpress --watch
-``` erhält man die IP-Adresse der Wordpress Website
+``` 
+erhält man die IP-Adresse der Wordpress Website
 
 ![wordpress IP](./pictures/wordpress IP.png  "wordpress IP")
 

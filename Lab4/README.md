@@ -37,7 +37,8 @@ kubectl get service wordpress --watch
 ``` 
 erhält man die IP-Adresse der Wordpress Website
 
-![wordpress IP](./pictures/wordpress IP.png  "wordpress IP")
+![wordpressIP](./pictures/wordpress IP.png  "wordpressIP")
+
 
 
 

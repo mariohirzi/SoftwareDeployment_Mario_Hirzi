@@ -3,9 +3,9 @@ FROM ubuntu:latest
 ENV container docker
 
 
-ENV MYSQL_USER 'user'
-ENV MYSQL_PASS '123'
-ENV MYSQL_DB 'database'
+ARG MYSQL_USER 'user'
+ARG MYSQL_PASS '123'
+ARG MYSQL_DB 'database'
 
 RUN apt update
 RUN apt upgrade -y
